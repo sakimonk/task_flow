@@ -9,6 +9,6 @@ server:
 logging:
   level:
     org.springframework.data.mongodb.core.MongoTemplate: DEBUG
-    org.springframework: DEBUG
-    org.apache.tomcat: DEBUG
-    org.springframework.boot: DEBUG
+#    org.springframework: DEBUG
+#    org.apache.tomcat: DEBUG
+#    org.springframework.boot: DEBUG
