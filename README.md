@@ -1,6 +1,6 @@
 ### Environment Configuration
 * JDK 21
-* Mongo 8.0
+* MongoDB 8.0
 
 ### Build & Run
 1. Run the build command in the project root directory: `./gradlew clean build`
