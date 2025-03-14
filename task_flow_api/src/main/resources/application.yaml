@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: task_flow_api
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/task_flow
+server:
+  port: 8080
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+    org.springframework: DEBUG
+    org.apache.tomcat: DEBUG
+    org.springframework.boot: DEBUG
