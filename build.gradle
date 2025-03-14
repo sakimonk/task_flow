@@ -54,10 +54,22 @@ subprojects {
         useJUnitPlatform() // Make sure run with JUnit 5
     }
 
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
 }
 
 // Optional: Disable bootJar task in the parent if it's not required for the parent project
 tasks.withType(BootJar) {
     enabled = false
 }
+
+//tasks.withType(JavaCompile) {
+//    options.encoding = "UTF-8"
+//}
+//
+//tasks.withType(Test) {
+//    systemProperty "file.encoding", "UTF-8"
+//}
 

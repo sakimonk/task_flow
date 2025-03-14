@@ -6,6 +6,9 @@
 1. Run the build command in the project root directory: `./gradlew clean build`
 2. Start the server: `java -jar ./task_flow_api/build/libs/task_flow_api-0.0.1-SNAPSHOT.jar`
 
+### Test
+Run the test command in the project root directory: `./gradlew clean test`
+
 ### Swagger UI Address
 http://localhost:8080/swagger-ui/index.html#
 #### OpenAPI Doc (for importing APIs into Postman)

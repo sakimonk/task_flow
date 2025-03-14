@@ -50,16 +50,16 @@ public class SecurityConfig {
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 )
-                .csrf(AbstractHttpConfigurer::disable) // 关闭 CSRF 保护（可选）
-                .httpBasic(AbstractHttpConfigurer::disable) // 关闭 Basic 认证
-                .formLogin(AbstractHttpConfigurer::disable) // 关闭表单登录
-                ; // 无状态会话;
+                .csrf(AbstractHttpConfigurer::disable) // Close CSRF protection（optional）
+                .httpBasic(AbstractHttpConfigurer::disable) // Close Basic authentication（optional）
+                .formLogin(AbstractHttpConfigurer::disable) // close form login（optional）
+                ;
 
 
         return http.build();
     }
 
-    // 认证管理器
+    // authenticationManager
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
